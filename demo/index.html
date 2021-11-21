@@ -7,9 +7,82 @@
         <script src="../source/j2h-converter.js"></script>
         <script type="text/javascript">
             function jsonToHtmlTable() {
+var jsonn  ={
+  "param": "type",
+  "desc": "root",
+  "value": "r",
+  "text": "seri",
+  "tags": {
+    "n": [
+      {
+        "type": "desc",
+        "text": "(kl)"
+      },
+      {
+        "type": "desc",
+        "text": "cahaya; semarak;"
+      },
+      {
+        "type": "desc",
+        "text": "kemuliaan; keindahan;"
+      }
+    ],
+    "adj": [
+      {
+        "type": "desc",
+        "text": "cantik; bagus;"
+      },
+      {
+        "type": "desc",
+        "text": "cahaya; semarak;"
+      },
+      {
+        "type": "desc",
+        "text": "kemuliaan; keindahan;"
+      },
+      {
+        "type": "desc",
+        "text": "cantik; bagus;"
+      },
+      {
+        "type": "desc",
+        "text": "(kl) yang mulia; sri;"
+      },
+      {
+        "type": "desc",
+        "text": "(kl) yang mulia; sri;"
+      }
+    ],
+    "v": [
+      {
+        "type": "link",
+        "text": "menyeri"
+      },
+      {
+        "type": "desc",
+        "text": "seimbang; tidak ada yang menang dan tidak ada yang kalah;"
+      },
+      {
+        "type": "desc",
+        "text": "tukar-menukar barang dengan tidak memakai tambahan; tukar guling;"
+      },
+      {
+        "type": "desc",
+        "text": "kedua belah pihak sama-sama mau;"
+      },
+      {
+        "type": "desc",
+        "text": "(cak) pulang (kembali) pokok (tidak beruntung dan tidak rugi);"
+      }
+    ]
+  },
+  "url": "http://kateglo.com/api.php?format=json&phrase=seri",
+  "related": [],
+  "detailed": ""
+}
                 var txtJson = document.querySelector('#txtJson');
                 if(txtJson.value && txtJson.value.trim() != '') {
-                    var j2ht = new J2HConverter(txtJson.value, 'divMain');
+                    var j2ht = new J2HConverter(jsonn.value, 'divMain');
                     j2ht.attributes = { class: 'j2ht_table', cellspacing: '0', cellpadding: '0' };
                     j2ht.convert();
                 }
