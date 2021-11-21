@@ -80,7 +80,7 @@ var jsonn  ={
   "related": [],
   "detailed": ""
 }
-                var txtJson = document.querySelector('#txtJson');
+                var txtJson = jsonn; 
                 if(txtJson.value && txtJson.value.trim() != '') {
                     var j2ht = new J2HConverter(jsonn.value, 'divMain');
                     j2ht.attributes = { class: 'j2ht_table', cellspacing: '0', cellpadding: '0' };
